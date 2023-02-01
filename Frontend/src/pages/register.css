@@ -1,0 +1,43 @@
+.reg-input{
+    margin: 20px;
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+}
+.reginput{
+    margin: 20px;
+}
+.frmBAckground{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-image: url("../../public/images/back.jpeg");
+    content: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+select{
+    margin: 20px;
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+}
+form{
+    background-color: #fff;
+    margin: 50px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border: 1px solid;
+}
+textarea{
+    /* margin: 20px 0px ; */
+    width: 500px;
+    padding: 10px;
+}
+

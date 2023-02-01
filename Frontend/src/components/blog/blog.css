@@ -1,0 +1,26 @@
+.blogHead{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    line-height: 10rem;
+}
+
+.blog-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.blog-child{
+    font-size: 1.2rem;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-child>p{
+    margin: 70px;
+}
+.blog-child>img{
+    margin: 60px;
+}
