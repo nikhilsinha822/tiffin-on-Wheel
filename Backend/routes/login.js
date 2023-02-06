@@ -16,7 +16,7 @@ const cors = require("cors")
 app.use(cors())
 
 //signup post
-
+//
 router.post('/signup', async (req, res) => {
 
   try {
