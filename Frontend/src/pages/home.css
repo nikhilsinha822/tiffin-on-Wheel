@@ -1,0 +1,24 @@
+.missionContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.Storyimg{
+    width: 100%;
+    margin: 20px;
+    height: 100%;
+    background-image: url('../../public//images/aboutImg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.missionimg{
+    background-image: url('../../public//images/mission.jpg');
+    margin: 100px 10px;
+    height: 400px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.missionCnt{
+    padding: 50px;
+    text-align: justify;
+}

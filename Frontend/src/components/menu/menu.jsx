@@ -3,7 +3,7 @@ import MenuCard from "./menucards";
 
 function Menu() {
   return (
-    <div className="MenuContainer">
+    <div className="MenuContainer" style={{marginTop:"100px"}}>
       <MenuCard />
     </div>
   );

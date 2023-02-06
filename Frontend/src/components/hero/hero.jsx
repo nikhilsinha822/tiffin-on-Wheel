@@ -9,8 +9,10 @@ import React from "react";
 function Home() {
   return (
     <div className="Home" id="Home">
-      <h1 className="introTxt">Get the best meal at your footsteps!</h1>
-      <button className="btn"><a href="/customer" style={{textDecoration:"none", color:"#030332"}}>B O O K - N O W</a></button>
+      <div className="introTxt">
+      <h1>Get the best meal at your footsteps!</h1>
+      </div>      
+      <button className="btn"><a href="/customer" style={{textDecoration:"none", color:"#030332"}}>BOOK - NOW</a></button>
     </div>
   );
 }

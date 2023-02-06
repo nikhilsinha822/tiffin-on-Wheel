@@ -30,10 +30,10 @@ function MenuCard() {
   return (
     <div className="">
       <div className="menuPg" id="Menu">
-        <h1 className="menuHead">MENU</h1>
-        <button className="menucar leftbtn" onClick={previous}>
+        {/* <h1 className="menuHead">MENU</h1> */}
+        {/* <button className="menucar leftbtn" onClick={previous}>
           <p className="caroselBtn">◄</p>
-        </button>
+        </button> */}
         <div className="parentMenu MenuContainer">
           <div className="childMenu  sp">
             <Item value={Sunday} />
@@ -57,10 +57,10 @@ function MenuCard() {
             <Item value={Saturday} />
           </div>
         </div>
-        <button className="menucar rightbtn" onClick={next}>
+        {/* <button className="menucar rightbtn" onClick={next}>
           <p className="caroselBtn">►</p>
         </button>
-        <button className="btn menuButton">FULL MENU</button>
+        <button className="btn menuButton">FULL MENU</button> */}
       </div>
     </div>
   );

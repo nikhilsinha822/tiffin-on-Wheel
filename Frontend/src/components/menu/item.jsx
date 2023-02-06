@@ -18,14 +18,7 @@ function Item(props) {
     return (
       <div key={prop.id} className="childMenu childMenuCaroselRes">
         <div className="grandChildMenu">
-          <img className="menuImage" src={prop.image} />
-        </div>
-        <div className="grandChildMenu">
-          <h3 className="itemName">{prop.name}</h3>
-          <p className="itemDetail grandchildCarsoselRes">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nisl
-            lectus, laoreet at sem sed.
-          </p>
+          <img style={{margin: '50px 10px'}} className="menuImage" src={prop.image} />
         </div>
       </div>
     );

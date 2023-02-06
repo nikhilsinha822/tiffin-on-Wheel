@@ -70,28 +70,35 @@ header nav{
 .Home{
     background: url("images/Screenshot 2022-10-27 194916.png");
     /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    padding-bottom: 200px;
-    padding-top: 250px;
     text-align: center;
+    height: 100vh;
 } 
 
 /* 
 font-family: 'Roboto Slab', serif;
 font-family: 'Titillium Web', sans-serif; */
+
 .introTxt{
     color: #030332;
     font-family: 'Fuzzy Bubbles ', cursive;
-    font-size: 4vw;
+    font-size: 1.3rem;
     margin: 0 20vw;
-    /* transition: 1s;
-    transform: translate(-200vh); */
-    /* background-color: rgb(128, 128, 128, 0.4); */
-    background-color: hsl(49, 98%, 51%, 0.2);
-    /* border: 10px solid #030332; */
-    /* border-radius: 60%; */
+    background-image: url('images/sloganbackground.png');
+    opacity: 0.9;
+    background-attachment:local;
+    background-size: contain;
+    padding: 50px;
+}
+.introTxt>h1{
+    margin: 20px;
 }
 /* .resintroTxt{
     transform: none;
@@ -101,9 +108,16 @@ font-family: 'Titillium Web', sans-serif; */
     color: #030332;
     border-color: #FDCE07;
     margin-top: 20px;
-    padding: 20px;
+    border-radius: 10px;
+    border: 0px;
+    padding: 15px 20px;
     font-family: 'Hammersmith One', sans-serif;
-    font-size: 2vw;
+    font-size: 1.9rem;
+    transition: 0.2s;
+}
+.btn:hover{
+    margin-top: 20px;
+    font-size: 2.1rem;
 }
 @media screen and (max-width: 768px){
     .introTxt{
@@ -117,17 +131,12 @@ font-family: 'Titillium Web', sans-serif; */
 }
 
 /* menu page */
-.menuHead{
+.Head{
     color: #030332;
     font-family: 'Roboto Slab', serif;
     text-align: center;
     font-size: 6vw;
-    line-height: 19vw;
-}
-.menuButton{
-   margin-bottom: 50px;
-   text-align: center;
-   padding: 20px 50px;
+    line-height: 12vw;
 }
 .menuPg{
     text-align: center;
@@ -137,12 +146,8 @@ font-family: 'Titillium Web', sans-serif; */
 .menuImage{
     max-width: 130px;
     aspect-ratio: 25/20;
-    border-radius: 10%;
+    border-radius: 5px;
 }
-/* .menuImage:hover{
-    max-width: 160px;
-    
-}   */
 .itemName{
     font-family: 'Titillium Web', sans-serif;
     padding: 0 3vh;
@@ -155,50 +160,26 @@ font-family: 'Titillium Web', sans-serif; */
     .parentMenu{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
     }
 }
-    .childMenu{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        max-width:100%;
-        padding-bottom: 120px;
-        float: right;
-    }
     .sp{
         padding-bottom: 0;
     }
-
-/* menucontainer */
 .MenuContainer{
     width: auto;
     display: flex;
     overflow: hidden;
     scroll-behavior: smooth;
+    background-color: #030332;
 }
 .menucar{
     padding: 20px 10px;
     font-size: larger;
-    position: absolute;
     top: 75rem;
     cursor: pointer;
 }
 .childMenu{
-    min-width: 100%;
-    max-width: 100%;
-}
-.leftbtn{
-  left: 0;
-  top: 65rem;
-  margin: 20px;
-}
-.rightbtn{
-  margin: 20px;
-  right: 0;
-  top: 65rem;
-}
-.homebutton{
-    
+   display: flex;
 }
 .menucar{
     border: none;
@@ -219,90 +200,10 @@ font-family: 'Titillium Web', sans-serif; */
     display: revert;
 }}
 
-    /* .responsiveMenu{
-        display: flex;
-        max-width: 30%;
-        min-width: 22%;
-    }
-    .responsiveMenuBtnl{
-        top: 120vh;
-        margin: 20px;
-      }
-    .responsiveMenuBtnr{
-        margin: 20px;
-        top: 120vh;
-      } */
 
 
 
-/* pricing page */
-.column{
-    margin: 5vw 12vw;
-    background-color: rgb(240, 235, 235);
-    opacity: 0.9;
-    width: 75%;
-    
-}
 
-.desc{
-    list-style-type: none;
-    border: 1px solid rgb(241, 237, 237);
-    text-align: center;
-    line-height: 5rem;
-    font-size: 1rem;
-    font-family: 'Titillium Web', sans-serif;
-}
-.cardHead{
-    background-color: #030332;
-    color: white;
-    font-size: 2rem;
-}
-.priceHead{
-    font-family: 'Roboto Slab', serif;
-    text-align: center;
-    font-size: 4rem;
-    line-height: 10rem;
-    color: #eee;
-}
-.priceAmt{
-    background-color: #07077f;
-    color: #eee;
-    font-size: 1.5rem;
-}
-.cardBtn{
-    color: #eee;
-    background-color: #07077f;
-    font-size: 1.7rem;
-    padding: 5px 30px;
-    margin-top: 40px;
-    border-radius: 10%;
-}
-.cardBtn:hover{
-    background-color: #030332;
-}
-
-.pricingPart{
-    background-image: url("/images/eazytrendz_3070_trend20210218124824.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    min-width: fit-content;
-    min-height: fit-content;
-    padding-bottom: 2vw;
-    
-}
-
-@media screen and (min-width: 1209px){
-    .column{
-        width: 29%;
-        float: left;
-        margin: 25px;
-        
-    }
-    .pricingPart{
-        padding-bottom: 600px;
-    }   
-}
 
 
 /* contact */
