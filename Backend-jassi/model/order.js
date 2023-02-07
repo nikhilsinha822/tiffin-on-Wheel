@@ -8,10 +8,8 @@ const userSchema = new mongoose.Schema({
     address:String,
     otp:Number,
     date:Date,
-    item:String
-    
-    
-        
+    item:String,
+    picked_status:Boolean 
   });
   
 

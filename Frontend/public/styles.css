@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar */
+header{
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #030332;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.logo{
+    padding-left: 40px;
+    width: 200px;
+}
+header a{
+    text-decoration: none;
+    color: #eee;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+header button{
+    background: transparent;
+    color: #eee;
+    border: none;
+    font-size: 1.5rem;
+}
+.nav-btn{
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 1024px){
+.nav-btn{
+    display: unset;
+    
+}
+.nav-open-btn{
+    padding-right: 40px;
+}
+header nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: 0.7s;
+    transform: translate(-200vh);
+    background-color: #030332;
+}
+.responsive_nav{
+    transform: none;
+}
+.nav-close-btn{
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+}
+}
+/* homepage */
+.Home{
+    background: url("images/Screenshot 2022-10-27 194916.png");
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+} 
+
+/* 
+font-family: 'Roboto Slab', serif;
+font-family: 'Titillium Web', sans-serif; */
+
+.introTxt{
+    color: #030332;
+    font-family: 'Fuzzy Bubbles ', cursive;
+    font-size: 1.3rem;
+    margin: 0 20vw;
+    background-image: url('images/sloganbackground.png');
+    opacity: 0.9;
+    background-attachment:local;
+    background-size: contain;
+    padding: 50px;
+}
+.introTxt>h1{
+    margin: 20px;
+}
+/* .resintroTxt{
+    transform: none;
+} */
+.btn{
+    background-color: #FDCE07;
+    color: #030332;
+    border-color: #FDCE07;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 0px;
+    padding: 15px 20px;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 1.9rem;
+    transition: 0.2s;
+}
+.btn:hover{
+    margin-top: 20px;
+    font-size: 2.1rem;
+}
+@media screen and (max-width: 768px){
+    .introTxt{
+        font-size: 7vw;
+        margin: 0 8vw;
+    } 
+    .btn{
+        padding: 2vw 3vw;
+        font-size: 2.5vw;
+    }
+}
+
+/* menu page */
+.Head{
+    color: #030332;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    font-size: 6vw;
+    line-height: 12vw;
+}
+.menuPg{
+    text-align: center;
+    max-width: 100%;
+    min-width: 100%;
+}
+.menuImage{
+    max-width: 130px;
+    aspect-ratio: 25/20;
+    border-radius: 5px;
+}
+.itemName{
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0 3vh;
+}
+.itemDetail{
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0 3vh;
+}
+@media screen and (min-width: 768px){
+    .parentMenu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+    .sp{
+        padding-bottom: 0;
+    }
+.MenuContainer{
+    width: auto;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    background-color: #030332;
+}
+.menucar{
+    padding: 20px 10px;
+    font-size: larger;
+    top: 75rem;
+    cursor: pointer;
+}
+.childMenu{
+   display: flex;
+}
+.menucar{
+    border: none;
+    background-color: hsl(240, 90%, 26%, 0.85);
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+}
+.menucar:hover{
+    background-color: hsl(240, 90%, 26%);
+}
+.caroselBtn{
+    color: white;
+    font-size: 30px;
+}
+@media screen and (max-width: 907px){
+.childMenuCaroselRes{
+    display: revert;
+}}
+
+
+
+
+
+
+
+/* contact */
+/* contacts */
+.contHead{
+    font-size: 3vmax;
+    line-height: 4vmax;
+    text-align: center;
+}
+.contact{
+    text-align: center;
+}
+.botxt{
+    color: grey;
+    line-height: 40px;
+}
+.icons{
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.icon{
+    font-size: 30px;
+    padding: 20px;
+    color: black;
+}
+/* login page */
+.loginInput{
+   margin: 20px;
+   font-size: 20px;
+   padding: 5px;
+   display: block;
+}
+.loginText{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: large;
+}
+.loginForm{
+    width: fit-content;
+    text-align: center;
+    display: block;
+    border: 1px solid black;
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }

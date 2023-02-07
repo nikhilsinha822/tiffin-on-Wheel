@@ -87,6 +87,10 @@ router.post("/login", async (req, res) => {
             expires: new Date(Date.now() + time),
             httpOnly: true
           })
+          res.cookie("token", token, {
+            expires: new Date(Date.now() + time),
+            httpOnly: true
+          })
           console.log(token);
           res.send({ msg: `user logged in`, email: `${lemail}` })
         }

@@ -14,9 +14,11 @@ app.use(express.static(static1));
 app.set("view engine", "ejs");
 const login =  require("./routes/login")
 const google =  require("./routes/google")
-const main =  require("./routes/main");
+const main =  require("./routes/booking");
 const payment = require('./routes/payment');
-const whitelist = ['chrome-untrusted://new-tab-page', 'https://www.google.com', 'https://127.0.0.1:5500','http://localhost:3500','http://localhost:5000'];
+const delivery = require('./routes/delivery');
+const vender_login = require('./routes/verder_login');
+const whitelist = ['chrome-untrusted://new-tab-page', 'https://www.google.com', 'https://127.0.0.1:5500','https://127.0.0.1:3000','http://localhost:3500','http://localhost:5000'];
 const corsOption = {
     origin: (origin, callback) => {
         if(whitelist.indexOf(origin) !== -1 || !origin){
@@ -35,6 +37,8 @@ app.use("/",login);
 app.use("/",google);
 app.use("/",main);
 app.use("/",payment);
+app.use("/",delivery);
+app.use("/",vender_login);
 
 
 app.listen(port,()=>console.log("server is up....."));

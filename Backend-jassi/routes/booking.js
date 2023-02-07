@@ -22,11 +22,12 @@ const isLoggedIn = require("../middleware/middleware")
                         address:address.address,
                         otp:otp,
                         date:Date(),
-                        item:req.body.item
+                        item:req.body.item,
+                        picked_status:false,
                         }
                 const usr = new order(adnew)
                const data= await usr.save();
-               res.send(data)  ;    
+               res.send(data);    
                 }
                 else
                 {

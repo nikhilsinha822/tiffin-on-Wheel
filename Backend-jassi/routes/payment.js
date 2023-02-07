@@ -13,7 +13,7 @@ const isLoggedIn = require("../middleware/middleware")
 router.post('/create/orderid',isLoggedIn, async (req, res) => {
     try{
     let options = {
-      amount:req.body.ammount,  // amount in the smallest currency unit
+      amount:req.body.amount,  // amount in the smallest currency unit
       currency: "INR",
       receipt: "order_rcptid_11"
     };
